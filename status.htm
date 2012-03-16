@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	
+		<meta charset="utf-8">
+		<title></title>
+		
+		<!--[if (lt IE 9) & (!IEMobile)]>
+		<script src="js/libs/selectivizr-min.js"></script>
+		<![endif]-->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+		
+		<script src="js/status.js"></script>
+		<link rel="stylesheet" href="css/status.css" />
+		
+	</head>
+	
+	<body id="StatusUpdate"> 
+		
+		<div class="StatusBar">
+			<div class="StatusUpdateTools clearfix">
+				<div id="shareTextHolder">
+					<div>
+						<div id="shareText" contenteditable="true">Share what's new..</div>
+						<div><span title="Close" id="closeIcon"></span></div>
+					</div>
+				</div>
+				
+				<div id="icons">
+		      		<span title="Add photo" id="addPhoto"></span>
+		      		<span title="Add link" id="addLink"></span>
+		      		
+		      		<span id="arrowP"></span>
+		      		<div id="tooltipPhoto">
+		      			<div id = "tooltipContent">+ Add photo</div>
+		      			<div><span title="Close" id="closePhotoIcon"></span></div>
+		      		</div>      						      		
+				</div>
+
+			</div>
+			
+			<div id="tooltipLink">
+				<span title="Add link" id="addLink" class="active"></span>
+      			<input type="text"></input>
+      			<div><span title="Close" id="closeLinkIcon"></span></div>
+			</div>
+			
+			<div id="preview">
+				<div><span title="Close" id="closePreviewIcon"></span></div>
+				
+				<figure>
+					<img class="imgrounded" src="photos/user1.jpg" alt="user">
+				</figure>
+				<h3>This is awesome </h3>
+				<div><p>Text, text, text</p></div>
+				<div class="clearer"></div>		
+
+			</div>
+		
+		</div>
+
+		<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+		
+		<!--[if (lt IE 9) & (!IEMobile)]>
+		<script src="js/libs/imgsizer.js"></script>
+		<![endif]-->
+		
+		<script>
+			// iOS scale bug fix
+			MBP.scaleFix();
+			
+			// Respond.js
+			yepnope({
+				test : Modernizr.mq('(min-width)'),
+				nope : ['js/libs/respond.min.js']
+			});
+		</script>
+		
+		<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6. chromium.org/developers/how-tos/chrome-frame-getting-started -->
+		<!--[if lt IE 7 ]>
+		<script defer src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script defer>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+		<![endif]-->
+	</body>
+</html>

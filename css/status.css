@@ -1,0 +1,151 @@
+.StatusUpdateTools {
+  bottom: 0;
+  right: 0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: text;
+  position: relative;
+}
+
+#shareText{
+	min-height: 16px;
+	color: #999;
+	width: 85%;
+	-webkit-user-modify: read-write-plaintext-only;
+	-moz-user-modify: read-write;
+	-ms-user-modify: read-write-plaintext-only;	
+	-webkit-line-break: after-white-space;
+	-webkit-nbsp-mode: space;
+	word-wrap: break-word;
+	outline-width: 0px;
+	direction: ltr;
+	unicode-bidi: embed;
+}
+
+#icons { position: absolute; bottom: 7px; right: 11px; }
+
+#addPhoto {
+  background: url("../img/g_sprite.png") no-repeat scroll -34px -17px transparent;
+  cursor: pointer;
+  height: 14px;
+  width: 17px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#addPhoto:hover,
+#addPhoto.active {
+  background: url("../img/g_sprite.png") no-repeat scroll -78px -36px transparent;
+  position: relative;
+}
+
+#tooltipPhoto {
+	display: none;
+	width: 130px;
+	padding: 10px;
+	z-index: 10;
+	border: 1px solid #bbb;
+	background-color: #fff;
+}
+
+#tooltipLink {
+	display: none;
+	width: 96.3%;
+	padding: 10px;
+	z-index: 10;
+	border: 1px solid #bbb;
+	background-color: #fff;
+	position: relative;
+}
+
+#tooltipLink input {
+	margin-left: 20px;
+	width: 85%;
+}
+
+#arrowP{
+	background: url("../img/arrow.png") no-repeat scroll 0 0 #fff;
+	width: 20px;
+	height: 11px;
+	display: none;
+	position: absolute;
+	top: 14px;
+	z-index: 12;
+	right: 30px;
+}
+
+#addLink {
+  background: url("../img/g_sprite.png") no-repeat scroll -69px -15px transparent;
+  cursor: pointer;
+  height: 14px;
+  width: 17px;
+  display: inline-block;
+}
+
+#addLink:hover,
+#addLink.active {
+  background: url("../img/g_sprite.png") no-repeat scroll -18px -34px transparent;
+}
+
+#closeIcon, #closePhotoIcon, #closeLinkIcon, #closePreviewIcon {
+	background: no-repeat url("../img/g_sprite.png") -96px -41px;
+	height: 9px;
+	width: 9px;
+	cursor: pointer;
+	position: absolute;
+	top: 11px;
+	right: 11px;
+	display: none;
+}
+
+#closePreviewIcon {
+	display: block;
+}
+
+#preview {
+	border: 1px solid #bbb;
+	min-height: 30px;
+	width: 94.65%;
+	position: relative;
+	display: none;
+	padding: 4% 2.5% 0 2.5%;
+}
+
+#preview figure {
+	margin: 0 auto;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+#preview figure img {
+	width: 80px;
+	height: 80px;
+}
+
+.SmallImg {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 15px;
+}
+
+.StatusBar {
+	float: left;
+	margin: 10px 20px 0 0;
+	width: 70%;
+}
+
+.StatusUpdateButton {
+	float: left;
+	margin-top: 10px;
+}
+
+#role p{
+	margin-bottom: 0;
+}
+
+.BoldText { 
+	font-weight: bold;
+}
